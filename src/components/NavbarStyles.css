@@ -7,6 +7,11 @@ box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
 width: 95%;
 height: 80px;
 border-radius: 13px;
+position: fixed;
+top: 20px;
+left: 50%;
+transform: translate(-50%);
+z-index: 9999;
 }
 
 .navbar-logo{
@@ -63,6 +68,10 @@ button:hover{
     color: #fff;
 }
 
+.menu-icons{
+    display: none;
+}
+
 @media screen and (max-width: 850px) {
     .navbarItems{
          z-index: 99;
@@ -76,17 +85,19 @@ button:hover{
         height: auto;
         position: absolute;
         top: 0;
-        left: -100;
+        left: -100%;
         opacity: 0;
         align-items: stretch;
         padding: 80px 0 30px 0;
         margin: 0;
-        
+        transition: 0.3s ease-in-out;
+        border-radius: 13px;
     }
     .nav-menu.active{
         left: 0;
         opacity: 1;
         z-index: -1;
+        transition: 0.3s ease-in-out;
     }
     .nav-links{
         display: block;
@@ -114,5 +125,13 @@ button:hover{
         font-size: 1.2rem;
         font-weight: 700;
         letter-spacing: 2px;
+    }
+    .menu-icons{
+        display: block;
+        cursor: pointer;
+    }
+    .menu-icons i{
+        font-size: 1.2rem;
+        color: #222;
     }
 }
