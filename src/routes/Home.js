@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import AboutImg from '../assets/12.jpg';
 import Destination from '../components/Destination';
 import Trip from '../components/Trip';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
         />
         <Destination />
         <Trip />
+        <Footer />
     </div>
   )
 }
