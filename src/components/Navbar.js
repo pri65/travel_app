@@ -6,6 +6,10 @@ const Navbar = () => {
   return (
     <nav className="NavbarItems">
         <h1 className="navbar-logo">Trippy</h1>
+        <div className="menu-icons">
+            <i className="fas fa-bars"></i>
+            <i className="fas fa-times"></i>
+        </div>
         <ul className="nav-menu">
             {MenuItems.map((item, index) => {
                 return (
@@ -14,8 +18,9 @@ const Navbar = () => {
                     <i className= {item.icon}></i>{item.title}
                     </a>
                 </li>
-                )
+                );
             })}
+            <button>Sign Up</button>
         </ul>
     </nav>
   )
