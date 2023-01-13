@@ -1,6 +1,5 @@
-import { Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import { Routes } from 'react-router-dom';
+
+import { Routes,Route } from 'react-router-dom';
 import Home from './routes/Home';
 import About from './routes/About';
 import Contact from './routes/Contact';
@@ -16,7 +15,7 @@ function App() {
         <Route path='/service' element={<Service />}/>
         <Route path='/contact' element={<Contact />}/>
       </Routes>
-      <Navbar />
+      
     </div>
   );
 }
