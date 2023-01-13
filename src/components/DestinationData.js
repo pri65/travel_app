@@ -8,19 +8,14 @@ import "./DestinationStyles.css";
 class DestinationData extends Component {
   render() {
     return (
-        <div className="first-des">
+        <div className={this.props.className}>
         <div className="des-text">
-          <h2>Taal Volcano, Batangas</h2>
-          <p>
-            One of the most iconic views in Luzon, Mt. Taal boasts a volcano
-            inside a lake inside an island. If you fancy a closer look, the hike
-            up to the crater is a mere 45 minutes, and is easy enough for
-            beginners. Guides will{" "}
-          </p>
+          <h2>{this.props.heading}</h2>
+          <p>{this.props.text}</p>
         </div>
         <div className="image">
-          <img alt="img" src={Mountain1}/>
-          <img alt="img" src={Mountain2}/>
+          <img alt="img" src={this.props.img1}/>
+          <img alt="img" src={this.props.img2}/>
         </div>
       </div>
     );
