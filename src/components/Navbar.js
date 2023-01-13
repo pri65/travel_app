@@ -1,6 +1,6 @@
 import "./NavbarStyles.css";
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -8,7 +8,9 @@ const Navbar = () => {
         <h1 className="navbar-logo">Trippy</h1>
         <ul className="nav-menu">
             <li>
-                <Link><i class="fa-solid fa-house-user"></i>Home</Link>
+                <a href="/">
+                <i className="fa-solid fa-house-user"></i>Home
+                </a>
             </li>
         </ul>
     </nav>
